@@ -14,5 +14,15 @@ class ExampleController extends Controller
         //
     }
 
-    //
+    // membuat method generateKey
+    public function generateKey ()
+    {
+        return str_random(32);
+    }
+
+    // method fooExample 
+    public function fooExample(){
+        return 'Example Controller from POST Request';
+    }
+    
 }
